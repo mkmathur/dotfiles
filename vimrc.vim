@@ -55,7 +55,6 @@ let mapleader = "\<Space>"
 nnoremap <silent> <Leader>p <c-w>}
 
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
-let g:tagbar_width = 100
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
