@@ -1,0 +1,10 @@
+tpope/vim-sensible
+tpope/vim-fugitive
+scrooloose/syntastic
+kien/ctrlp.vim
+majutsushi/tagbar
+altercation/vim-colors-solarized
+bling/vim-airline
+derekwyatt/vim-scala
+kien/rainbow_parentheses.vim
+Raimondi/delimitMate

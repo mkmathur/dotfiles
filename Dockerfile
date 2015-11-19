@@ -8,10 +8,15 @@ RUN apt-get update && apt-get -y install \
   vim \
   git \
   sudo \
-  exuberant-ctags
+  man \
+  exuberant-ctags \
+  curl \
+  ruby ruby-dev ruby-bundler && \
+  rm -rf /var/lib/apt/lists/*
 
 COPY ubuntu.bash_aliases /root/.bash_aliases
 COPY vimrc.vim /root/.vimrc
 COPY vim /root/.vim
 
-RUN git clone https://github.com/gmarik/Vundle.vim.git /root/.vim/bundle/Vundle.vim
+RUN cd /root/.vim/ && \
+      ./install_plugins.rb

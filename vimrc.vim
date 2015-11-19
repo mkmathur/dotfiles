@@ -1,35 +1,9 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'Raimondi/delimitMate'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" solarized color scheme
-syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans = 1
+execute pathogen#infect()
 
 syntax on
+filetype plugin indent on
 set relativenumber
 set autoindent
 set smartindent
@@ -40,6 +14,12 @@ set expandtab
 set showcmd
 set t_Co=256
 set foldmethod=syntax
+
+" solarized color scheme
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans = 1
 
 " Use case insensitive search, except when using capital letters
 set ignorecase
@@ -53,7 +33,7 @@ let mapleader = "\<Space>"
 
 " preview tag
 nnoremap <silent> <Leader>p <c-w>}
-
+" toggle Tagbar
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
 set statusline+=%#warningmsg#
