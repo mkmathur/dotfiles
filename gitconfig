@@ -1,0 +1,31 @@
+[user]
+  name = Mallika Mathur
+  email = mkmathur@cs.uw.edu
+[core]
+  excludesfile = /Users/mallika/.gitignore_global
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[push]
+  default = simple
+[alias]
+  last = log -1 HEAD
+  st = status
+  co = checkout
+  br = branch
+  ci = commit
+  cam = commit -a -m
+  sts = status -s
+  branches = branch -a
+  stashes = stash list
+  unstage = reset -q HEAD --
+  discard = checkout --
+  uncommit = reset --mixed HEAD~
+  amend = commit --amend
+  precommit = diff --cached --diff-algorithm=minimal -w
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
