@@ -8,6 +8,7 @@ alias cd='_() { cd $1; ls; }; _'
 alias code='cd ~/Documents/Code'
 alias cse='cd ~/Dropbox/CSE'
 alias dotfiles='cd ~/Documents/dotfiles'
+alias box='cd ~/Dropbox'
 alias reload='source ~/.bash_profile'
 
 alias attu='ssh mkmathur@attu.cs.washington.edu'
