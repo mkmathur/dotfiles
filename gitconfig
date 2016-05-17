@@ -11,6 +11,7 @@
   co = checkout
   br = branch
   ci = commit
+  ca = commit -a
   cam = commit -a -m
   sts = status -s
   branches = branch -a
