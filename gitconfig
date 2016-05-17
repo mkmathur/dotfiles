@@ -13,7 +13,7 @@
   ci = commit
   ca = commit -a
   cam = commit -a -m
-  sts = status -s
+  s = status -s
   branches = branch -a
   stashes = stash list
   unstage = reset -q HEAD --
