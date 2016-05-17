@@ -2,7 +2,7 @@
   name = Mallika Mathur
   email = mallika@mkmathur.com
 [core]
-  excludesfile = /Users/mkmathur/.gitignore_global
+	excludesfile = /Users/mkmathur/.gitignore_global
 [push]
   default = simple
 [alias]
