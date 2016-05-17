@@ -1,4 +1,7 @@
+export PATH="/usr/local/bin:$PATH"
+
 export PS1="[\W]\\$ "
+
 # solarized ls colors
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
@@ -6,10 +9,10 @@ alias ls='ls -G'
 alias la="ls -a"
 alias ll="ls -l"
 alias lc='clear; ls'
+
 alias code='cd ~/Documents/Code'
 alias cse='cd ~/Dropbox/CSE'
-alias configs='cd ~/Documents/dotfiles'
-alias cfg='vim ~/.bash_profile'
+alias dotfiles='cd ~/Documents/dotfiles'
 alias reload='source ~/.bash_profile'
 
 alias c='clear'
