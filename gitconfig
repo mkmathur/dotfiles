@@ -1,14 +1,8 @@
 [user]
   name = Mallika Mathur
-  email = mkmathur@cs.uw.edu
+  email = mallika@mkmathur.com
 [core]
-  excludesfile = /Users/mallika/.gitignore_global
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+  excludesfile = /Users/mkmathur/.gitignore_global
 [push]
   default = simple
 [alias]
