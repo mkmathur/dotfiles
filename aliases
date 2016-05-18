@@ -10,6 +10,7 @@ alias cse='cd ~/Dropbox/CSE'
 alias dotfiles='cd ~/Documents/dotfiles'
 alias box='cd ~/Dropbox'
 alias reload='source ~/.bash_profile'
+alias gocode='cd ~/Documents/Code/go_ws/src/github.com/mkmathur'
 
 alias attu='ssh mkmathur@attu.cs.washington.edu'
 
