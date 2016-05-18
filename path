@@ -1,2 +1,4 @@
 PATH=/usr/local/share/npm/bin:$PATH
+PATH=$PATH:/usr/local/opt/go/libexec/bin
+PATH=$PATH:$GOPATH/bin
 export PATH
