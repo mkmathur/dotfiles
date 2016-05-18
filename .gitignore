@@ -1,3 +1,4 @@
 vim/bundle
 vim/autoload
 .DS_STORE
+*.swp
