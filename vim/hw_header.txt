@@ -1,4 +1,0 @@
-/**
- * Mallika Mathur (1236742)
- * mkmathur@cs.uw.edu
- */

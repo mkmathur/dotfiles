@@ -39,7 +39,7 @@ set foldmethod=syntax
 
 " solarized color scheme
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 let g:solarized_termtrans = 1
 
