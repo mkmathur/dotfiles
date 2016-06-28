@@ -91,4 +91,16 @@ let g:airline#extensions#tabline#enabled = 1
 
 :nmap ; :
 
-map <leader>w :0r ~/.vim/hw_header.txt
+" Force vim to write directly to the file, and copy a backup
+" Makes webpack work well
+set backupcopy=yes
+
+" syntax highlighting for go
+au BufRead,BufNewFile *.go setfiletype go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
