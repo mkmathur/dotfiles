@@ -3,7 +3,6 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lc='clear; ls'
 alias c='clear'
-alias cd='_() { cd $1; ls; }; _'
 
 alias code='cd ~/Documents/Code'
 alias cse='cd ~/Dropbox/CSE'
