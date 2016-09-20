@@ -40,7 +40,7 @@ set foldmethod=syntax
 
 " solarized color scheme
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 let g:solarized_termtrans = 1
 
@@ -49,6 +49,9 @@ set ignorecase
 set smartcase
 " Highlight searches
 set hlsearch
+set splitbelow
+set splitright
+set incsearch
 
 set tags=tags;/
 
@@ -92,12 +95,21 @@ let g:airline#extensions#tabline#enabled = 1
 
 :nmap ; :
 
-map <leader>w :0r ~/.vim/hw_header.txt
-
 " Alt-j/k insert blank lines
 nnoremap <silent><a-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><a-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
-set splitbelow
-set splitright
-set incsearch
+
+" Force vim to write directly to the file, and copy a backup
+" Makes webpack work well
+set backupcopy=yes
+
+" syntax highlighting for go
+au BufRead,BufNewFile *.go setfiletype go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
