@@ -93,3 +93,11 @@ let g:airline#extensions#tabline#enabled = 1
 :nmap ; :
 
 map <leader>w :0r ~/.vim/hw_header.txt
+
+" Alt-j/k insert blank lines
+nnoremap <silent><a-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><a-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
+set splitbelow
+set splitright
+set incsearch
