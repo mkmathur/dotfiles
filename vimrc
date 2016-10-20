@@ -11,7 +11,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Raimondi/delimitMate'
@@ -40,7 +39,7 @@ set foldmethod=syntax
 
 " solarized color scheme
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 let g:solarized_termtrans = 1
 
@@ -56,11 +55,6 @@ set incsearch
 set tags=tags;/
 
 let mapleader = "\<Space>"
-
-" preview tag
-nnoremap <silent> <Leader>p <c-w>}
-" toggle Tagbar
-nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -81,6 +75,7 @@ let g:go_list_type = "quickfix"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map <leader>b :CtrlPBuffer<CR>
+map <leader>p :CtrlP<CR>
 
 " automatically removes trailing whitespace on save
 " autocmd BufWritePre * :%s/\s\+$//e
@@ -98,7 +93,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Alt-j/k insert blank lines
 nnoremap <silent><a-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><a-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-
 
 " Force vim to write directly to the file, and copy a backup
 " Makes webpack work well
