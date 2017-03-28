@@ -54,3 +54,26 @@ Mindful Mynah
 * Enable 1password integration
 
 # Set up PopClip
+
+* Extensions are saved in Dropbox
+
+# Set up Fantastical 
+
+* Add license (click link in email)
+* Add accounts
+* Make calendar sets
+
+# Set up Omnifocus
+
+* Add license (from Omnifocus)
+
+# Dash
+
+* License
+* Sync
+* Alfred integration
+
+# Mindful Mynah
+
+
+
