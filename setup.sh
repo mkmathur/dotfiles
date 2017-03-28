@@ -2,7 +2,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="aliases bash_profile bash_prompt exports extra functions gitconfig gitignore_global tmux.conf vimrc"
+files="aliases bash_profile bash_prompt exports extra functions gitconfig gitignore_global path tmux.conf vimrc"
 
 echo "Creating $olddir for backup of any existing dotfiles"
 mkdir -p $olddir
