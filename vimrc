@@ -18,6 +18,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'fatih/vim-go'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +48,7 @@ let g:solarized_termtrans = 1
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+
 " Highlight searches
 set hlsearch
 set splitbelow
@@ -107,3 +110,7 @@ let g:go_highlight_structs = 1
 let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" open NERDTree when vim starts up if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
