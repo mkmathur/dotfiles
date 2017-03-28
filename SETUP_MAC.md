@@ -23,10 +23,25 @@ git clone git@github.com:mkmathur/dotfiles.git
 # Run script to make soft links to dotfiles
 ./link_dotfiles.sh
 
+# Source bash_profile
+source ~/.bash_profile
+
 # Install vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
-# Install other apps
+# Install App Store apps with mas
 
+Doesn't work in tmux.
+
+mas search <app-name>
+mas install <app-id>
+
+Quiver
 Mindful Mynah
+
+# Set up Dropbox
+
+Selective Sync
+
+

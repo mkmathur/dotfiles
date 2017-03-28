@@ -10,6 +10,8 @@ brew tap caskroom/cask
 binaries=(
   git
   tmux
+  reattach-to-user-namespace
+  mas
 )
 
 brew install ${binaries[@]}
