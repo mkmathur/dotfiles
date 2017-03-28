@@ -1,17 +1,6 @@
 alias ls='clear; ls -G'
-alias la="clear; ls -a"
-alias ll="clear; ls -l"
-alias lc='clear; ls'
-alias c='clear'
 
-alias code='cd ~/Documents/Code'
-alias cse='cd ~/Dropbox/CSE'
-alias dotfiles='cd ~/Documents/dotfiles'
-alias box='cd ~/Dropbox'
 alias reload='source ~/.bash_profile'
-alias gocode='cd ~/Documents/Code/go_ws/src/github.com/mkmathur'
-
-alias attu='ssh mkmathur@attu.cs.washington.edu'
 
 #tl: list sessions
 alias tl='tmux ls'
