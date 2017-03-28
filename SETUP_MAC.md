@@ -40,8 +40,17 @@ mas install <app-id>
 Quiver
 Mindful Mynah
 
+# Set up 1password
+
+* Enable integration with 3rd party apps (for Alfred)
+
 # Set up Dropbox
 
-Selective Sync
+# Set up Alfred
 
+* Get license from 1password
+* Set sync folder (Dropbox)
+* Set hotkey
+* Enable 1password integration
 
+# Set up PopClip
