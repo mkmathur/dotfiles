@@ -2,19 +2,11 @@
 
 System Preferences => Modifier Keys
 
-# Install Homebrew
+# Get dotfiles repo with curl
 
-https://brew.sh
+# Install Homebrew, brew binaries, and cask binaries
 
-# Install stuff with Homebrew
-
-brew tap caskroom/cask
-brew install git
-brew install tmux
-
-# Install stuff with Cask
-brew cask install iterm2
-brew cask install alfred
+./brew.sh
 
 # Set iTerm color scheme
 Preferences => Profiles => Colors => Color Presets
@@ -35,3 +27,6 @@ git clone git@github.com:mkmathur/dotfiles.git
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+# Install other apps
+
+Mindful Mynah
