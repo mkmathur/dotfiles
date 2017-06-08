@@ -44,6 +44,8 @@ Mindful Mynah
 
 * Enable integration with 3rd party apps (for Alfred)
 
+# Sign in to Google and Slack
+
 # Set up Dropbox
 
 # Set up Alfred
