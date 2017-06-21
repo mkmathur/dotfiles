@@ -1,8 +1,17 @@
 alias c='clear'
 alias r='source ~/.bash_profile'
-alias ls='ls -G'
 
-#tl: list sessions
+# ls colors
+case "$OSTYPE" in
+  darwin*)  alias ls='ls -G' ;; 
+  *)   alias ls='ls --color' ;;
+esac
+
+# ls after cd or mkdir
+alias cd='_() { cd $1; ls; }; _'
+alias mkdir='_() { mkdir $1; ls; }; _'
+
+#tl: list tmux sessions
 alias tl='tmux ls'
 
 #tn <name>: create a session named <name>
@@ -10,5 +19,3 @@ alias tn='tmux -2 new -s'
 
 #ta <name>: attach to a session named <name>
 alias ta='tmux -2 attach -d -t'
-
-alias notify='terminal-notifier -message "DONE"'

@@ -1,2 +1,0 @@
-alias cd='_() { cd $1; ls; }; _'
-alias mkdir='_() { mkdir $1; ls; }; _'
