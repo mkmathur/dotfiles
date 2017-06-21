@@ -1,6 +1,6 @@
-alias ls='clear; ls -G'
-
-alias reload='source ~/.bash_profile'
+alias c='clear'
+alias r='source ~/.bash_profile'
+alias ls='ls -G'
 
 #tl: list sessions
 alias tl='tmux ls'
