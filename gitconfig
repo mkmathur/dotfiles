@@ -1,6 +1,6 @@
 [user]
   name = Mallika Mathur
-  email = mallika@mkmathur.com
+	email = mkmathur@users.noreply.github.com
 [core]
 	excludesfile = /Users/mkmathur/.gitignore_global
 [push]
