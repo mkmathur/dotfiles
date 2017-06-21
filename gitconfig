@@ -12,7 +12,7 @@
   co = checkout
   br = branch
   ci = commit
-  cim = commit -m
+  did = commit -m
   cam = commit -a -m
   discard = checkout --
   branches = branch -a
