@@ -8,16 +8,16 @@
 [alias]
   last = log -1 HEAD
   st = status
+  s = status -s
   co = checkout
   br = branch
   ci = commit
-  ca = commit -a
+  cim = commit -m
   cam = commit -a -m
-  s = status -s
+  discard = checkout --
   branches = branch -a
   stashes = stash list
   unstage = reset -q HEAD --
-  discard = checkout --
   uncommit = reset --mixed HEAD~
   amend = commit --amend
   precommit = diff --cached --diff-algorithm=minimal -w
