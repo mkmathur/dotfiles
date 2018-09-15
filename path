@@ -1,5 +1,6 @@
 # Add `/usr/local/bin` and `~/bin` to the `$PATH`
 PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
+PATH=${HOME}/go/bin:$PATH
 export PATH
 
