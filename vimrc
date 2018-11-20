@@ -89,8 +89,11 @@ map <leader>p :CtrlP<CR>
 
 " airline
 set laststatus=2 " appear all the time
+set noshowmode " disable the default mode indicator
 let g:airline_theme = 'solarized'
+let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'jsformatter'
 
 " Alt-j/k insert blank lines
 nnoremap <silent><a-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
