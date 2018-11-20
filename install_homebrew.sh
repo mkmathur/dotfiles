@@ -12,6 +12,7 @@ binaries=(
   tmux
   reattach-to-user-namespace
   mas
+  httpie
 )
 
 brew install ${binaries[@]}
