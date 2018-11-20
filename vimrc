@@ -44,6 +44,13 @@ set background=dark
 colorscheme solarized
 let g:solarized_termtrans = 1
 
+" fixes weird colors in the sign column
+highlight clear SignColumn
+
+" clear the separator between vertical splits
+highlight VertSplit ctermbg=NONE
+highlight VertSplit ctermfg=NONE
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
