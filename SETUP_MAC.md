@@ -28,6 +28,7 @@ source ~/.bash_profile
 
 # Install vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 vim +PluginInstall +qall
 
 # Install App Store apps with mas

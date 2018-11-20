@@ -36,9 +36,13 @@
 ehthumbs.db
 Thumbs.db
 
-# Vim generated file
+# Vim 
 .netrwhist
 *.swp
 
 # VSCode
 .vscode
+
+# IntelliJ
+.idea/
+*.iml
