@@ -39,3 +39,6 @@ Thumbs.db
 # Vim generated file
 .netrwhist
 *.swp
+
+# VSCode
+.vscode
