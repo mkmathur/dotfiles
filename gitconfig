@@ -4,7 +4,7 @@
 [core]
 	excludesfile = /Users/mkmathur/.gitignore_global
 [push]
-  default = simple
+	default = current
 [alias]
   last = log -1 HEAD
   st = status
@@ -15,12 +15,13 @@
   did = commit -m
   cam = commit -a -m
   discard = checkout --
-  branches = branch -a
+  branches = branch
   stashes = stash list
   unstage = reset -q HEAD --
   uncommit = reset --mixed HEAD~
   amend = commit --amend
   precommit = diff --cached --diff-algorithm=minimal -w
+  pf = push --force
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
