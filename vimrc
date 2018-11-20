@@ -18,6 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/nerdtree'
+Plugin 'MattesGroeger/vim-bookmarks'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
