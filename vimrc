@@ -51,6 +51,12 @@ highlight clear SignColumn
 highlight VertSplit ctermbg=NONE
 highlight VertSplit ctermfg=NONE
 
+" Map ; to :
+:nmap ; :
+
+" Map enter to toggle fold
+nmap <CR> za
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
@@ -64,6 +70,8 @@ set incsearch
 set tags=tags;/
 
 let mapleader = "\<Space>"
+
+map <leader>r :source ~/.vimrc<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%*
@@ -83,8 +91,6 @@ map <leader>p :CtrlP<CR>
 set laststatus=2 " appear all the time
 let g:airline_theme = 'solarized'
 let g:airline#extensions#tabline#enabled = 1
-
-:nmap ; :
 
 " Alt-j/k insert blank lines
 nnoremap <silent><a-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
