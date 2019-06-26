@@ -20,6 +20,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/nerdtree'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'tpope/vim-surround'
+Plugin 'larioj/plum'
+Plugin 'larioj/plum-git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -106,3 +108,18 @@ set backupcopy=yes
 " open NERDTree when vim starts up if no files specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" because I'm using fish shell
+set shell=/bin/bash
+
+" Plum
+let g:plum_actions = [
+      \ plum#git#MagicStatus(),
+      \ plum#term#SmartTerminal(),
+      \ plum#vim#Execute(),
+      \ plum#fso#OpenFso(),
+      \ ]
+" bind the plum to ,
+nnoremap , :call plum#Plum('n', 0)<cr>
+
+"let $BASH_ENV="~/.bash_profile"
