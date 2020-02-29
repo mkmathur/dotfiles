@@ -119,6 +119,28 @@ let g:plum_actions = [
       \ plum#vim#Execute(),
       \ plum#fso#OpenFso(),
       \ ]
+
+let g:plum_git_ui_spec = { 'name': 'plum-git'
+        \, 'update': plum#ui#spec#Cmd('git status')
+        \, 'extractors': 
+        \    [ { 'staged': function('plum#git#MatchStaged') }
+        \    , { 'unstaged': function('plum#git#MatchUnstaged') } 
+        \    ]
+        \, 'git add -A' : plum#ui#spec#Cmd()
+        \, 'git reset HEAD': plum#ui#spec#Cmd()
+        \, 'git add {{unstaged}}' : plum#ui#spec#Cmd()
+        \, 'git reset HEAD -- {{staged}}' : plum#ui#spec#Cmd()
+        \, 'git commit': plum#ui#spec#Cmd()
+        \, 'git log': plum#ui#spec#Cmd()
+        \, 'git push': plum#ui#spec#Cmd()
+        \, 'git add {{unstaged}} --patch': plum#ui#spec#Cmd()
+        \, 'git diff': plum#ui#spec#Cmd(
+        \     "bash -ic 'git diff --color=always | less -r'")
+        \, '[patch]':
+        \    { 'git add {{unstaged}} --patch': plum#ui#spec#Cmd()
+        \    }
+        \}
+
 " bind the plum to ,
 nnoremap , :call plum#Plum('n', 0)<cr>
 

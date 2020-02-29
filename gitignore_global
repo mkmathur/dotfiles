@@ -46,3 +46,8 @@ Thumbs.db
 # IntelliJ
 .idea/
 *.iml
+
+# Plum
+.notes
+
+tmp

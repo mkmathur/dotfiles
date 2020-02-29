@@ -20,6 +20,9 @@ alias tn='tmux -2 new -s'
 #ta <name>: attach to a session named <name>
 alias ta='tmux -2 attach -d -t'
 
+#tac <name>: attach to a session named <name> and enable iTerm integration
+alias tac='tmux -2 -CC attach -d -t'
+
 # dep-update <repo name>: pull in updates for a single dependency
 alias dup='_() { ./bin/dep ensure -update $1; }; _'
 

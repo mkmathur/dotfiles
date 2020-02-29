@@ -1,0 +1,57 @@
+
+# 2018-11-20 05:58:30.424397
++SELECT COUNT(*) FROM dy
+
+# 2018-11-20 05:58:38.819957
++SELECT COUNT(*) FROM dynamo.teacher_pages;
+
+# 2018-11-20 05:59:49.450969
++SELECT COUNT(*) FROM  dy
+
+# 2019-02-14 18:17:12.876420
++help
+
+# 2019-02-14 18:17:14.946754
++?
+
+# 2019-02-14 18:18:18.776073
++\e
+
+# 2019-02-14 18:20:29.343051
++\?
+
+# 2019-02-14 18:21:30.761319
++\d historical.managed_school_portal_adoption_vw_day
+
+# 2019-02-14 18:21:53.748079
++\d historical.helper_app_active_users_day
+
+# 2019-02-14 18:31:32.392308
++CREATE TABLE "historical"."managed_goals_adopted_schools_vw_day" ( 
++  "_record_timestamp" timestamp without time zone     ,
++  "_record_date_pt" date     ,
++  "district_id" character varying(256)     ,
++  "school_id" character varying(256)     ,
++  "is_goals_adopted" boolean    
++)
++distkey("district_id")
++compound sortkey("_record_timestamp","is_goals_adopted")
++;
+
+# 2019-02-14 18:31:55.095885
++\d historical.managed_goa
+
+# 2019-02-14 18:32:00.395464
++\d historical.managed_goals_adopted_schools_vw_day
+
+# 2019-02-15 18:21:32.689914
++\d goals.etl_settings
+
+# 2019-02-15 18:22:35.461907
++select app_id from goals.etl_settings where length(app_id) > 24 limit 10;
+
+# 2019-02-15 18:23:10.385541
++select left(app_id, 24) from goals.etl_settings where length(app_id) > 24 limit 10;
+
+# 2019-02-15 19:43:48.548281
++truncate historical.managed_goals_adopted_schools_vw_day

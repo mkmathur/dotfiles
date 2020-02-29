@@ -6,8 +6,10 @@
 [push]
 	default = current
 [alias]
+  l = log --oneline
   last = log -1 HEAD
   st = status
+  sst = status
   s = status -s
   co = checkout
   br = branch
@@ -22,8 +24,11 @@
   amend = commit --amend
   precommit = diff --cached --diff-algorithm=minimal -w
   pf = push --force
+  staged = diff --staged
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
 [color]
 	ui = auto
+[rebase]
+	autosquash = true
